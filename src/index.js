@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Hello from './Hello.js';
-import ImgComp from './ImgComp.js'
+import Card from './Card.js';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
+
+// Set the title before rendering React components
+document.title = 'Robofriends';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Hello greeting={'Hello ' + 'React Ninja'}/>
-    <ImgComp />
+    <div>
+      <Card />
+      <Card />
+      <Card />
+    </div>
   </React.StrictMode>
 );
 
